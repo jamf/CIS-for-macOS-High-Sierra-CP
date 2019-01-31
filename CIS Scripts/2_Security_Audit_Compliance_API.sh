@@ -1172,7 +1172,7 @@ Audit5_14="$(defaults read "$plistlocation" OrgScore5_14)"
 if [ "$Audit5_14" = "1" ]; then
 	macType=$(system_profiler SPHardwareDataType | egrep -c "Model Identifier: MacBook")
 	if [[ "$macType" -ge 0 ]]; then
-		hibernateValue=$(pmset -g | egrep standbydelay | awk '{print $2}')
+		hibernateValue=$(pmset -g | egrep standbydelaylow | awk '{print $2}')
 		if [[ "$hibernateValue" == "" ]] || [[ "$hibernateValue" -gt 900 ]]; then
 			echo "$(date -u)" "5.14 passed" | tee -a "$logFile"
 			defaults write "$plistlocation" OrgScore5_14 -bool false; else
