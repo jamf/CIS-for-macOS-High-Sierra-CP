@@ -126,7 +126,7 @@ Reads the plist at /Library/Application Support/SecurityScoring/org_security_sco
 
 SCORED CIS EXCEPTIONS:
 
-- Does not implement pwpolicy commands (5.2.1 - 5.2.8)
+- Does not implement `pwpolicy` commands (5.2.1 - 5.2.8)
 
 - Audits but does not actively remediate (due to alternate profile/policy functionality within Jamf Pro):
 * 2.4.4 Disable Printer Sharing
