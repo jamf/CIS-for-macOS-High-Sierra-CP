@@ -114,7 +114,7 @@ OrgScore2_3_1="true"
 OrgScore2_3_2="true"
 # OrgScore2_3_2="false"
 
-## 2.3.3 Familiiarize users with scren lock tools or corner to Start Screen Saver (not scored)
+## 2.3.3 Familiarize users with screen lock tools or corner to Start Screen Saver (not scored)
 ## The rationale in the CIS Benchmark for this is incorrect. The computer will lock if the 
 ## display sleeps before the Screen Saver activates
 # Configuration Profile - Custom payload > com.apple.dock > wvous-tl-corner=0, wvous-br-corner=5, wvous-bl-corner=0, wvous-tr-corner=0
