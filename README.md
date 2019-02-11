@@ -148,6 +148,7 @@ The following Configuration profiles are available in mobileconfig and plist for
 * 4.1 Disable Bonjour advertising service 
 * 6.1.4 Disable "Allow guests to connect to shared folders" 
 * 6.3 Disable the automatic run of safe files in Safari
+
 ### CIS 10.13 LoginWindow Security_and_Privacy ScreenSaver mobileconfig
 * 2.3.1 Set an inactivity interval of 20 minutes or less for the screen saver 
 * 2.3.2 Secure screen saver corners 
@@ -163,6 +164,7 @@ The following Configuration profiles are available in mobileconfig and plist for
 * 6.1.1 Display login window as name and password 
 * 6.1.2 Disable "Show password hints" 
 * 6.1.3 Disable guest account 
+
 ### CIS 10.13 Restrictions mobileconfig
 * 2.6.8 Disable sending diagnostic and usage data to Apple
 * 2.7.2 iCloud keychain (Not Scored)
