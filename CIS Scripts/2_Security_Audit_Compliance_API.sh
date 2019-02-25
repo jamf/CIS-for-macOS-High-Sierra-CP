@@ -1176,7 +1176,7 @@ if [ "$Audit5_14" = "1" ]; then
 		if [[ "$hibernateValue" == "" ]] || [[ "$hibernateValue" -gt 900 ]]; then
 			echo "$(date -u)" "5.14 passed" | tee -a "$logFile"
 			defaults write "$plistlocation" OrgScore5_14 -bool false; else
-			echo "* 5.14 Require a password to wake the computer from sleep or screen saver" >> "$auditfilelocation"
+			echo "* 5.14 Ensure system is set to hibernate" >> "$auditfilelocation"
 			echo "$(date -u)" "5.14 fix" | tee -a "$logFile"
 			fi
 	else
