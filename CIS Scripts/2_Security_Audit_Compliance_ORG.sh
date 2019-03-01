@@ -489,7 +489,7 @@ if [ "$Audit2_6_1_2" = "1" ]; then
 
 	
 
-# 2.6.1.3 Ensure all user storage CoreStorage Volumes are encyrpted
+# 2.6.1.3 Ensure all user storage CoreStorage Volumes are encrypted
 # Verify organizational score
 # Audit only.  Does not remediate
 Audit2_6_1_3="$(defaults read "$plistlocation" OrgScore2_6_1_3)"
