@@ -442,7 +442,7 @@ Audit3_3="$(defaults read "$plistlocation" OrgScore3_3)"
 if [ "$Audit3_3" = "1" ]; then
 	cp /etc/security/audit_control /etc/security/audit_control_old
 	oldExpireAfter=$(cat /etc/security/audit_control | egrep expire-after)
-	sed "s/${oldExpireAfter}/expire-after:60D OR 1G/g" /etc/security/audit_control_old > /etc/security/audit_control
+	sed "s/${oldExpireAfter}/expire-after:60d OR 1G/g" /etc/security/audit_control_old > /etc/security/audit_control
 	chmod 644 /etc/security/audit_control
 	chown root:wheel /etc/security/audit_control
 	echo "$(date -u)" "3.3 remediated" | tee -a "$logfile"	
