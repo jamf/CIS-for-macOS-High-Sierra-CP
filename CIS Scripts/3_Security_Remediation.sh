@@ -532,7 +532,7 @@ if [ "$Audit5_1_1" = "1" ]; then
 	# If client fails, then remediate
 	IFS=$'\n'
 	for userDirs in $( find /Users -mindepth 1 -maxdepth 1 -type d -perm -1 | grep -v "Shared" | grep -v "Guest" ); do
-		chmod -R og-rwx "$userDirs"
+		chmod og-rwx "$userDirs"
 	done
 	echo "$(date -u)" "5.1.1 enforced" | tee -a "$logFile"
 	unset IFS
